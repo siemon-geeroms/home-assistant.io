@@ -35,7 +35,7 @@ Not all Poweropti devices are supported currently. Check the list below to see i
 | Device                | Type        | Supported  |
 | --------------------- | ----------- | ---------- |
 | PA 201901 / PA 201902 | Power meter | Yes        |
-| PB202001              | Power meter | Not tested |
+| PB 202001             | Power meter | Not tested |
 | WA 201902             | Water meter | Yes        |
 | Powerfox FLOW         | Gas meter   | No         |
 | HA 201902             | Heat meter  | No         |
