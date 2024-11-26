@@ -30,7 +30,7 @@ Password:
 
 ## Poweropti devices
 
-Not all Poweropti devices are supported currently. Check the list below to see if your device is working with this integration. Create an [feature request](/help/) if your device is not supported yet.
+Not all Poweropti devices are supported currently. Check the list below to see if your device is working with this integration. Create a [feature request](/help/) if your device is not supported yet.
 
 | Device                | Type        | Supported  |
 | --------------------- | ----------- | ---------- |
