@@ -259,7 +259,7 @@ Play Rick and Morty episodes continuously starting from S2E5
 ```yaml
 entity_id: media_player.plex_player
 media_content_type: EPISODE
-media_content_id: { "library_name": "Adult TV", "show_name": "Rick and Morty", "season_number": 2, "episode_number": 5, "continuous": 1}'
+media_content_id: '{ "library_name": "Adult TV", "show_name": "Rick and Morty", "season_number": 2, "episode_number": 5, "continuous": 1}'
 ```
 #### Movie
 
