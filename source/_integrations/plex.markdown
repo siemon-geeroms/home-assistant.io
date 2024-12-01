@@ -333,7 +333,6 @@ The search will attempt to guess the type of media based on the search parameter
 
 # Watch the worst rated movie from the 2000s starring either Nicolas Cage or Danny Devito
 { "library_name": "Movies", "actor": ["Nicolas Cage", "Danny DeVito"], "decade": 2000, "sort": "audienceRating:asc", "maxresults": 1 }
-
 ```
 
 ### Compatibility
