@@ -223,7 +223,7 @@ media_content_id: '{ "playlist_name": "The Best of Disco", "shuffle": "1" }'
 #### TV episode
 
 | Data attribute | Description                                                                                                                                                                                                                                                                                                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |                              
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `entity_id`            | `entity_id` of the client                                                                                                                                                                                                                                                                                                                            |
 | `media_content_id`     | Quoted JSON containing:<br/><ul><li>`library_name` (Required)</li><li>`show_name` or `show.title`</li><li>`season_number` or `season.index`</li><li>`episode_number` or `episode.index`</li><li>`shuffle` (0 or 1)</li><li>`resume` (0 or 1)</li><li>`offset` (in seconds)</li><li>`allow_multiple` (0 or 1)</li><li>`continuous` (0 or 1)</li></ul> |
 | `media_content_type`   | `EPISODE`                                                                                                                                                                                                                                                                                                                                            |
@@ -259,7 +259,7 @@ Play Rick and Morty episodes continuously starting from S2E5
 ```yaml
 entity_id: media_player.plex_player
 media_content_type: EPISODE
-{ "library_name": "Adult TV", "show_name": "Rick and Morty", "season_number": 2, "episode_number": 5, "continuous": 1}'
+media_content_id: { "library_name": "Adult TV", "show_name": "Rick and Morty", "season_number": 2, "episode_number": 5, "continuous": 1}'
 ```
 #### Movie
 
