@@ -222,11 +222,11 @@ media_content_id: '{ "playlist_name": "The Best of Disco", "shuffle": "1" }'
 
 #### TV episode
 
-| Data attribute | Description                                                                                                                                                                                                                                                                                                            |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `entity_id`            | `entity_id` of the client                                                                                                                                                                                                                                                                                              |
-| `media_content_id`     | Quoted JSON containing:<br/><ul><li>`library_name` (Required)</li><li>`show_name` or `show.title`</li><li>`season_number` or `season.index`</li><li>`episode_number` or `episode.index`</li><li>`shuffle` (0 or 1)</li><li>`resume` (0 or 1)</li><li>`offset` (in seconds)</li><li>`allow_multiple` (0 or 1)</li></ul> |
-| `media_content_type`   | `EPISODE`                                                                                                                                                                                                                                                                                                              |
+| Data attribute | Description                                                                                                                                                                                                                                                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |                              
+| `entity_id`            | `entity_id` of the client                                                                                                                                                                                                                                                                                                                            |
+| `media_content_id`     | Quoted JSON containing:<br/><ul><li>`library_name` (Required)</li><li>`show_name` or `show.title`</li><li>`season_number` or `season.index`</li><li>`episode_number` or `episode.index`</li><li>`shuffle` (0 or 1)</li><li>`resume` (0 or 1)</li><li>`offset` (in seconds)</li><li>`allow_multiple` (0 or 1)</li><li>`continuous` (0 or 1)</li></ul> |
+| `media_content_type`   | `EPISODE`                                                                                                                                                                                                                                                                                                                                            |
 
 ##### Examples:
 
@@ -254,6 +254,13 @@ media_content_type: EPISODE
 media_content_id: '{ "library_name": "News TV", "show_name": "60 Minutes", "episode.unwatched": true, "episode.inProgress": [true, false], "resume": 1, "sort": "addedAt:asc", "maxresults": 1 }'
 ```
 
+Play Rick and Morty episodes continuously starting from S2E5
+
+```yaml
+entity_id: media_player.plex_player
+media_content_type: EPISODE
+{ "library_name": "Adult TV", "show_name": "Rick and Morty", "season_number": 2, "episode_number": 5, "continuous": 1}'
+```
 #### Movie
 
 | Data attribute | Description                                                                                                                                     |
@@ -326,6 +333,7 @@ The search will attempt to guess the type of media based on the search parameter
 
 # Watch the worst rated movie from the 2000s starring either Nicolas Cage or Danny Devito
 { "library_name": "Movies", "actor": ["Nicolas Cage", "Danny DeVito"], "decade": 2000, "sort": "audienceRating:asc", "maxresults": 1 }
+
 ```
 
 ### Compatibility
